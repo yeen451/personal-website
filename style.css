@@ -47,9 +47,9 @@ table {
 }
 /*index html*/
 .marquee {
-    font-size: 20px; /* Adjust text size */
+    font-size: 20px; 
     color: #911164;
-    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7); /* White shadow with RGBA */
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7);
 	  margin-left: 30px;
 }
 h1 {
@@ -124,10 +124,10 @@ p {
 
 /*social media links and icon for footer*/
 .social-list {
-  list-style-type: none; /* Remove default list bullets */
+  list-style-type: none; /* Remove bullets */
   display: flex;
   justify-content: center;
-  gap: 15px; /* Spacing between icons */
+  gap: 15px;
 }
 
 .social-list li {
@@ -135,7 +135,7 @@ p {
 }
 
 .social-list a img {
-  width: 40px; /* Customize the size of the icons */
+  width: 40px;
   height: auto;
 }
 
@@ -213,10 +213,10 @@ td img:hover {
   margin: auto;
 }
 .row {
-  display: flex; /* Enable flexbox for the row */
-  flex-wrap: wrap; /* Allow wrapping */
-  gap: 5px; /* Add space between columns */
-  margin: 0; /* Remove unnecessary negative margins */
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 5px; 
+  margin: 0;
 }
 
 /* Add padding BETWEEN each column */
@@ -228,8 +228,8 @@ td img:hover {
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  display: none; /* Hide all elements by default */
-  flex: 1 1 calc(33.33% - 16px); /* Three equal columns with gap adjustment */
+  display: none; 
+  flex: 1 1 calc(33.33% - 16px); 
   box-sizing: border-box;
 }
 
@@ -312,13 +312,13 @@ video:hover {
 /*css for contact section*/
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 5px; /* Add a top margin */
-  margin-bottom: 10px; /* Bottom margin */
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 5px; 
+  margin-bottom: 10px; 
   resize: vertical;
   font-size: 14px;
 }
@@ -353,8 +353,8 @@ input[type=submit]:hover {
 .social-links {
     list-style: none;
     margin: 0px;
-    display: flex; /* Align items horizontally */
-    gap: 10px; /* Add spacing between items */
+    display: flex;
+    gap: 10px;
 	  margin-left: 40px;
 	  margin-top: 10px;
 }
@@ -429,7 +429,7 @@ td a:hover {
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* hover background*/
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
@@ -543,12 +543,12 @@ li {
   }
 }
 abbr {
-  text-decoration: none; /* Remove underline */
+  text-decoration: none; 
 }
 
 abbr:hover {
-  background-color: #e48cd9; /* Add background color on hover */
-  cursor: pointer; /* Change cursor to pointer on hover */
+  background-color: #e48cd9;
+  cursor: pointer; 
 }
 ol {
   padding-left: 40px; 
