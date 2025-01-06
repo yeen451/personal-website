@@ -1,0 +1,557 @@
+/*css for Home*/
+body {
+    font-family: "Audiowide", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url("image/y2k.jpg");
+    margin: 0;
+    padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.heading-container {
+  border: 2px solid black; 
+  padding: 10px; 
+  display: inline-block; 
+}
+.rounded-box {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 15px; 
+  overflow: hidden;
+}
+table {
+    border-collapse: collapse;
+    animation: fadeIn 2s ease-in-out;
+    width: 100%;
+    max-width: 1000px;
+}
+
+/*Rounded box
+.rounded-box {
+    border-radius: 15px; 
+    overflow: hidden;
+}*/
+
+/*css for logo menu*/
+.custom-cell {
+    width: 100px;
+    text-align: left;
+    padding-left: 60px;
+}
+
+.custom-image {
+    height: 70px;
+    margin-top: 0px;
+}
+/*index html*/
+.marquee {
+    font-size: 20px; /* Adjust text size */
+    color: #911164;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7); /* White shadow with RGBA */
+	  margin-left: 30px;
+}
+h1 {
+    font-size: 30px;
+    color: #631e6d;
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    
+}
+h {
+  font-size: 20px;
+  color: #853392;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+h3 {
+    color: #d767e8; 
+	font-weight: bold; 
+	margin-left: 30px; 
+	margin-top: 10px; 
+	font-size: 20px; 
+	margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    color: #3b0345;
+    margin-left: 30px;
+    line-height: 1.5;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* css for footer */
+.footer-content {
+    color: #3b0345;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-content a {
+    color: #bf30d4;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+/*social media links and icon for footer*/
+.social-list {
+  list-style-type: none; /* Remove default list bullets */
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Spacing between icons */
+}
+
+.social-list li {
+  display: inline-block;
+}
+
+.social-list a img {
+  width: 40px; /* Customize the size of the icons */
+  height: auto;
+}
+
+/* Button Box Styles*/
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d767e8;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #7a3b84;
+  transform: scale(1.05);
+}
+
+.button:active {
+  background-color: #63306b;
+  transform: scale(0.95);
+}
+
+td img {
+    display: block; 
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+td img:hover {
+    transform: scale(1.05); 
+}
+
+/* Style for special links */
+.special-link {
+    color: #d767e8;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 13px;
+}
+
+/* Hover effect with animation */
+.special-link:hover {
+    color: #7a3b84; /* Dark */
+    text-decoration: underline;
+    transform: translateY(-5px); 
+}
+
+/* subtle animation when page loads */
+.special-link {
+    animation: fadeIn 1s ease-out forwards;
+}
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*css for my gallery*/
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+.row {
+  display: flex; /* Enable flexbox for the row */
+  flex-wrap: wrap; /* Allow wrapping */
+  gap: 5px; /* Add space between columns */
+  margin: 0; /* Remove unnecessary negative margins */
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 5px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  display: none; /* Hide all elements by default */
+  flex: 1 1 calc(33.33% - 16px); /* Three equal columns with gap adjustment */
+  box-sizing: border-box;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: #641970;
+  padding: 5px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: rgb(246, 168, 219);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #d767e8;
+}
+
+.btn.active {
+  background-color: #d767e8;
+  color: white;
+}
+h2 {
+    font-size: 40px;
+    color: #641970;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+/* Figure and Figcaption Styling */
+figure {
+  text-align: center;
+  margin: 20px auto;
+  padding: 0;
+  position: relative;
+}
+
+figcaption {
+  font-size: 40px;
+  color: #46184d;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+  font-family: "Dancing Script", serif;
+  
+}
+
+/* Video Styling */
+video {
+  width: 600px;
+  height: 450px;
+  border: 5px solid #a03c8f;
+  border-radius: 5px;
+  transition: transform 0.5s, box-shadow 0.5s;
+  margin-top: 5px;
+}
+
+/* Video Hover Animation */
+video:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7);
+}
+
+/*css for contact section*/
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 5px; /* Add a top margin */
+  margin-bottom: 10px; /* Bottom margin */
+  resize: vertical;
+  font-size: 14px;
+}
+label {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #d767e8;
+  color: rgb(211, 208, 208);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #a03c8f;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #4b4b4b;
+  padding: 20px;
+}
+
+/*css for contact me (social network)*/
+.social-links {
+    list-style: none;
+    margin: 0px;
+    display: flex; /* Align items horizontally */
+    gap: 10px; /* Add spacing between items */
+	  margin-left: 40px;
+	  margin-top: 10px;
+}
+
+.social-links li {
+    display: inline-block; 
+}
+
+.social-links li a {
+    display: inline-block;
+    text-decoration: none; 
+    transition: transform 0.2s ease, opacity 0.2s ease; 
+}
+
+.social-links li a img {
+    width: 40px; 
+    height: auto;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.social-links li a:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/*css for linked to html*/
+td a {
+    text-decoration: none;
+    color: #3b0345;
+    font-size: 16px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Hover effect for the link */
+td a:hover {
+    color: #e32dbb;
+    transition: all 0.3s ease;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+ul {
+  list-style-type: disc; 
+  padding-left: 20px; 
+  margin: 20px 0;
+  font-size: 18px;
+  color: #3b0345;
+}
+
+li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+/* Heading container */
+.text-container h1 {
+  font-size: 32px;
+  color: #631e6d;
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Description text container */
+.text-container2 p {
+  font-size: 17px;
+  color: #3b0345;
+  padding: 8px;
+  line-height: 1.0;
+}
+
+/* Links inside the description */
+.text-container2 a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.text-container2 a:hover {
+  text-decoration: underline;
+}
+
+.polaroid {
+  background-color: rgb(212, 212, 212);
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  animation: float 3s infinite ease-in-out;
+  margin-left: 10px;
+}
+
+.polaroid img {
+  width: 100%;
+  border-bottom: 10px solid rgb(212, 212, 212);
+}
+
+@keyframes float {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+abbr {
+  text-decoration: none; /* Remove underline */
+}
+
+abbr:hover {
+  background-color: #e48cd9; /* Add background color on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+ol {
+  padding-left: 40px; 
+  font-size: 18px;
+  color: #3b0345;
+}
